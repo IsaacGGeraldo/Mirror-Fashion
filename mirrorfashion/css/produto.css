@@ -1,30 +1,3 @@
-.produto
-{
-    color: #333;
-    line-height: 1.3;
-    margin-top: 2em;
-}
-
-.produto h1
-{
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-.produto p
-{
-    font-size: 1.2em;
-    font-style: italic;
-    margin-bottom: 1em;
-}
-
-.produto legend
-{
-    display: block;
-    font: bold 0.9em/2.5 Arial;
-    text-transform: uppercase;
-}
-
 .cores
 {
     position: relative;
@@ -53,7 +26,7 @@
 
 .cores label:hover::after
 {
-  border: 6px solid rgba(0, 0, 0, 0.2);
+    border: 6px solid rgba(0, 0, 0, 0.15);
 }
 
 .cores label img
@@ -82,6 +55,33 @@
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.produto
+{
+    color: #333;
+    line-height: 1.3;
+    margin-top: 2em;
+}
+
+.produto h1
+{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.produto p
+{
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.produto legend
+{
+    display: block;
+    font: bold 0.9em/2.5 Arial;
+    text-transform: uppercase;
 }
 
 label[for=verde]::after
@@ -116,4 +116,83 @@ label[for=azul]::after
     display: block;
     padding: 0.5em 1em;
     margin: 1em 0;
+
+    cursor: pointer;
+}
+
+.detalhes
+{
+    padding: 2em 0;
+}
+
+.detalhes h2
+{
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+.detalhes p
+{
+    margin: 1em 0;
+    font-size: 1em;
+    line-height: 1.5em;
+    max-width: 36em;
+}
+
+@media(min-width:500px)
+{
+    .detalhes
+    {
+        font-size: 1.2em;
+    }
+}
+
+@media(min-width: 630px)
+{
+    .produto
+    {
+        position: relative;
+        padding-left: 40%;
+
+        font-size: 1.2em;
+    }
+
+    .cores
+    {
+        position: static;
+        padding: 0;
+    }
+
+    .cores legend
+    {
+        position: static
+    }
+
+    .cores img
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        max-width: 35%;
+        max-height: 100%;
+    }
+
+    .cores label::after
+    {
+        position: static;
+        float: left;
+
+        margin-right: 10px;
+    }
+
+    fieldset
+    {
+        display: inline-block;
+        vertical-align: top;
+
+        margin: 1em 0;
+        min-width: 240px;
+        width: 45%;
+    }
 }
