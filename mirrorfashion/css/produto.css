@@ -33,6 +33,8 @@
 {
     display: block;
     max-width: 100%;
+
+    border: 2px solid #CCC;
 }
 
 .cores input:checked + label::after
@@ -106,7 +108,6 @@ label[for=azul]::after
 {
     background-color: #91bd3c;
     border: none;
-    color: #333;
 
     font-size: 1.4em;
     text-transform: uppercase;
@@ -118,6 +119,12 @@ label[for=azul]::after
     margin: 1em 0;
 
     cursor: pointer;
+}
+
+.comprar a
+{
+    text-decoration: none;
+    color: #333;
 }
 
 .detalhes
@@ -137,6 +144,46 @@ label[for=azul]::after
     font-size: 1em;
     line-height: 1.5em;
     max-width: 36em;
+}
+
+table
+{
+  border-spacing: 0.2em;
+  border-collapse: separate;
+}
+
+thead
+{
+  background-color: #999;
+}
+
+thead th
+{
+  font-weight: bold;
+  padding: 0.3em 1em;
+  text-align: center;
+}
+
+td
+{
+  padding: 0.3em;
+}
+
+tr:nth-child(2n)
+{
+  background-color: #ccc;
+}
+
+td:first-child
+{
+  font-style: italic;
+}
+
+.produto-back
+{
+  background-color: #F2F2F2;
+  margin-top: 1em;
+  border-top: 2px solid #CCC;
 }
 
 @media(min-width:500px)
