@@ -64,10 +64,24 @@
                                 <dd>40</dd>
                 
                                 <dt>Preço</dt>
-                                <dd>R$ 129,90</dd>
+                                <dd id="preco">R$ 129,90</dd>
                             </dl>
                         </div> <!--Fim informações do produto-->
                     </div> <!--Fim .card .bg-light .mb-3-->
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="qnt">Quantidade:</label>
+                                <input class="form-control" type="number" id="qnt" min="1" max="99" value="1">
+                            </div> <!--Fim .form group-->
+
+                            <div class="form-group">
+                                <label for="total">Total:</label>
+                                <output for="qnt preco" id="total" class="form-control">R$ 129,90</output>
+                            </div><!--Fim .form-group-->
+                        </div><!--Fim .card-body-->
+                    </div><!--Fim .card .mb-3-->
                 </div> <!--Fim .col-md-4-->
     
                 <div class="col-md-8 col-xl-9">
@@ -148,5 +162,6 @@
 
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/total.js"></script>
     </body>
 </html>
