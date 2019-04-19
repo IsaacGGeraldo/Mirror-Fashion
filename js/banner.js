@@ -10,4 +10,62 @@ function trocaBanner()
     banner.alt = bannersSlogan[Atual];
 }
 
-setInterval(trocaBanner, 4000);
+var time = setInterval(trocaBanner, 4000);
+var controle = document.querySelector('.pause');
+
+controle.onclick = function()
+{
+    if(controle.className == 'pause')
+    {
+        clearInterval(time);
+        controle.className = 'play';
+    }
+    else
+    {
+        time = setInterval(trocaBanner, 4000);
+        controle.className = 'pause';
+    }
+
+    return false;
+}
+
+var proximo = document.querySelector('.proximo')
+var anterior = document.querySelector('.anterior')
+
+proximo.onclick = function()
+{
+    if(Atual == (banners.length - 1))
+    {
+        Atual = 0;
+        banner = document.querySelector(".banner-destaque img");
+        banner.src = banners[Atual];
+        banner.alt = bannersSlogan[Atual];
+    }
+    else
+    {
+        Atual += 1;
+        banner = document.querySelector(".banner-destaque img");
+        banner.src = banners[Atual];
+        banner.alt = bannersSlogan[Atual];
+    }
+
+    return false;
+}
+
+anterior.onclick = function()
+{
+    if(Atual == 0)
+    {
+        Atual = (banners.length - 1)
+        banner = document.querySelector(".banner-destaque img");
+        banner.src = banners[Atual];
+        banner.alt = bannersSlogan[Atual];
+    }
+    else
+    {
+        Atual -= 1;
+        banner = document.querySelector(".banner-destaque img");
+        banner.src = banners[Atual];
+        banner.alt = bannersSlogan[Atual];
+    }
+}

@@ -144,6 +144,56 @@
     margin-top: 10px;
 }
 
+.banner-destaque
+{
+    position: relative;
+}
+
+.pause, .play, .proximo, .anterior
+{
+    position: absolute;
+    display: block;
+}
+
+.pause, .play
+{
+    right: 15px;
+    top: 15px;
+}
+
+.pause
+{
+    border-left: 10px solid #900;
+    border-right: 10px solid #900;
+    height: 30px;
+    width: 5px;
+}
+
+.play
+{
+    border-left: 25px solid #900;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+}
+
+.proximo
+{
+    border-left: 25px solid #0077c6;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    top: 190px;
+    right: 15px;
+}
+
+.anterior
+{
+    border-right: 25px solid #0077c6;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    top: 190px;
+    right: 660px;
+}
+
 .painel
 {
     margin: 10px 0;
@@ -262,6 +312,8 @@ footer .container
 {
     background-image: url(../img/googleplus.png);
 }
+
+
 
 header
 {
