@@ -181,7 +181,7 @@
     border-left: 25px solid #0077c6;
     border-bottom: 15px solid transparent;
     border-top: 15px solid transparent;
-    top: 190px;
+    top: 50%;
     right: 15px;
 }
 
@@ -190,7 +190,7 @@
     border-right: 25px solid #0077c6;
     border-bottom: 15px solid transparent;
     border-top: 15px solid transparent;
-    top: 190px;
+    top: 50%;
     right: 660px;
 }
 
@@ -380,8 +380,6 @@ footer .container
     background-image: url(../img/googleplus.png);
 }
 
-
-
 header
 {
     position: relative;
@@ -465,6 +463,24 @@ footer
     {
         clear: left;
         font-size: 90%;
+    }
+
+    .play, .pause
+    {
+        top: 32%;
+    }
+
+    .anterior, .proximo
+    {
+        display: none;
+    }
+
+    @media(max-width: 846px)
+    {
+        .play, .pause
+        {
+            display: none;
+        }
     }
 
     @media(min-width: 720xp)
